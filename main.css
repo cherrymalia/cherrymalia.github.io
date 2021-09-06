@@ -1,3 +1,15 @@
 p b {
-	color: #FF0000;
+	color: red;
 	}
+	
+p.prince {
+	min-width: 200px;
+	max-width: 400px;
+	text-align: left;
+	padding: 5px;
+	margin: 0px;
+}
+
+mark {
+	background-color: orange;
+}
