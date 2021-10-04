@@ -28,10 +28,14 @@ function questionPrompt() {
     	result = "computation error";
 	}
 	
-	if (result < min && result!= "computation error") {
+	if (result < min && result!= "computation error" && result != "wrong input error") {
 		min = result;
-	} else if (result > max && result != "computation error") {
+	} else if (result > max && result != "computation error" && result != "wrong input error") {
 		max = result;
+	}
+	
+	if (result != "computation error" && result != "wrong input error") {
+		total += result;
 	}
 	
 	
@@ -41,12 +45,10 @@ function questionPrompt() {
   	} else {
 		document.write("<table>");
 		document.write("<tr><th>Min</th><th>Max</th><th>Average</th><th>Total</th></tr>");
-		document.write("<tr><td>min</td><td>max</td><td>average</td><td>total</td></tr>");
+		document.write("<tr><td> min </td><td> max </td><td> total/count </td><td> total </td></tr>");
 		document.write("</table>");
   	}
 }
-
-
 
 function add(num1, num2) {
 	if (isNaN(num1) && isNaN(num2)){
