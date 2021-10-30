@@ -90,22 +90,22 @@
 		});
 		
 		$("img.twitter").click(function(){
-		
+		$("img.clicked").attr("src", "twitter.png").width("300").height("300");
 		});	
 		$("img.twitch").click(function(){
-		
+		$("img.clicked").attr("src", "twitch.png").width("300").height("300");
 		});
 		$("img.crunchyroll").click(function(){
-		
+		$("img.clicked").attr("src", "crunchyroll.png").width("300").height("300");
 		});
 		$("img.youtube").click(function(){
-		
+		$("img.clicked").attr("src", "youtube.png").width("300").height("300");
 		});
 		$("img.tiktok").click(function(){
-		
+		$("img.clicked").attr("src", "tiktok.png").width("300").height("300");
 		});
 		$("img.netflix").click(function(){
-		
+		$("img.clicked").attr("src", "netflix.png").width("300").height("300");
 		});
 		
 	</script>
@@ -113,6 +113,6 @@
 	<p class="in">In: </p>
 	<p class="out">Out: </p>
 	<p class="location">Mouse X:, Y: </p>
-	<p class="image"></p>
+	<img class="clicked"/>
 </body>
 </html>
