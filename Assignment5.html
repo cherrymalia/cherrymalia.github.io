@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 5: jQuery Events and Effects</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>		
+	<span>
+		<img src="twitter.png" class="websites" width="100" height="100">
+		<img src="twitch.png" class="websites" width="100" height="100">
+		<img src="crunchyroll.png" class="websites" width="100" height="100">
+		<br>
+		<img src="youtube.png" class="websites" width="100" height="100">
+		<img src="tiktok.png" class="websites" width="100" height="100">
+		<img src="netflix.png" class="websites" width="100" height="100">
+	</span>
+	
+	<script>
+		$("span").mousemove(function(event) {
+  		$("p.location").last().text("Mouse X: " + event.clientX + ", " + "Y: " + event.clientY);
+		});
+		
+		$("img.twitter").mouseenter(function(){
+    	$("p.in").text("In: Twitter");
+		$( this ).fadeTo( "fast", 0.5 );
+		});
+		$("img.twitch").mouseenter(function(){
+    	$("p.in").text("In: Twitch");
+		$( this ).fadeTo( "fast", 0.5 );
+		});
+		$("img.crunchyroll").mouseenter(function(){
+    	$("p.in").text("In: Crunchyroll");
+		$( this ).fadeTo( "fast", 0.5 );
+		});
+		$("img.youtube").mouseenter(function(){
+    	$("p.in").text("In: YouTube");
+		$( this ).fadeTo( "fast", 0.5 );
+		});
+		$("img.tiktok").mouseenter(function(){
+    	$("p.in").text("In: TikTok");
+		$( this ).fadeTo( "fast", 0.5 );
+		});
+		$("img.netflix").mouseenter(function(){
+    	$("p.in").text("In: Netflix");
+		$( this ).fadeTo( "fast", 0.5 );
+		});
+		
+		$("img.twitter").mouseleave(function(){
+    	$("p.out").text("Out: Twitter");
+		$( this ).fadeTo( "fast", 1.0 );
+		});
+		$("img.twitch").mouseleave(function(){
+    	$("p.out").text("Out: Twitch");
+		$( this ).fadeTo( "fast", 1.0 );
+		});
+		$("img.crunchyroll").mouseleave(function(){
+    	$("p.out").text("Out: Crunchyroll");
+		$( this ).fadeTo( "fast", 1.0 );
+		});
+		$("img.youtube").mouseleave(function(){
+    	$("p.out").text("Out: YouTube");
+		$( this ).fadeTo( "fast", 1.0 );
+		});
+		$("img.tiktok").mouseleave(function(){
+    	$("p.out").text("Out: TikTok");
+		$( this ).fadeTo( "fast", 1.0 );
+		});
+		$("img.netflix").mouseleave(function(){
+    	$("p.out").text("Out: Netflix");
+		$( this ).fadeTo( "fast", 1.0 );
+		});
+  
+  		$("img.twitter").dblclick(function() {
+  		window.open("https://twitter.com/");
+		});
+		$("img.twitch").dblclick(function() {
+  		window.open("https://twitch.com/");
+		});
+		$("img.crunchyroll").dblclick(function() {
+  		window.open("https://crunchyroll.com/");
+		});
+		$("img.youtube").dblclick(function() {
+  		window.open("https://youtube.com/");
+		});
+		$("img.tiktok").dblclick(function() {
+  		window.open("https://tiktok.com/");
+		});
+		$("img.netflix").dblclick(function() {
+  		window.open("https://netflix.com/");
+		});
+		
+		
+	</script>
+	
+	<p class="in">In: </p>
+	<p class="out">Out: </p>
+	<p class="location">Mouse X:, Y: </p>
+	<p class="image"></p>
+</body>
+</html>
