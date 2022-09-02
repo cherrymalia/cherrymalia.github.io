@@ -6,6 +6,14 @@
     margin: 0px;
 }
 
+#story b {
+    color:red;
+}
+
+span {
+    background-color:orange;
+}
+
 ul {
     list-style: none;
     margin: 0px;
@@ -40,10 +48,3 @@ ul {
     background-color: #e3e8e8;
 }
 
-#story b {
-    color: red;
-}
-
-span {
-    background-color: orange;
-}
