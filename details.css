@@ -7,17 +7,26 @@
 }
 
 #links {
-    display: inline-block;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     color: white
+}
+
+#links li{
+    display: inline;
+    padding: 5px;
+}
+
+#links li:hover {
+    background-color: #28423b;
 }
 
 li a {
     color: white;
     text-decoration: none;
 }
+
 
 p b {
     color:red;
