@@ -1,0 +1,22 @@
+#story{
+    min-width: 200px;
+    max-width: 430px;
+    text-align: left;
+    padding: 5px;
+    margin: 0px;
+}
+
+#links {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p b {
+    color:red;
+}
+
+mark {
+    background-color:orange;
+}
