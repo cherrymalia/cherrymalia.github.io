@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="design.css" type="text/css" rel="stylesheet">
+    <title>COMP322: Calculator</title>
+    <meta name="author" content="Malia Cherry">
+</head>
+
+<body style="background: #375950">
+    <!--display output from calculator.js and min/max table after done-->
+    <div class="center">
+        <h1 style="color:white">Calculator</h1>
+        <button type="button" onclick="Calculate()">Start Calculating</button>
+        <p style="color:white">View your results below</p>
+    </div>
+        
+        <table id="displayInput">
+            <tr>
+              <td>x</td>
+              <td>operator</td>
+              <td>y</td>
+              <td>result</td>
+            </tr>
+          </table>
+          <br>
+
+          <table id="displayOutput">
+            <tr>
+              <td>min</td>
+              <td>max</td>
+              <td>average</td>
+              <td>total</td>
+            </tr>
+          </table>
+        <br>
+        
+        <script src="calculator.js"></script>
+        
+</body>
+</html>
