@@ -1,12 +1,38 @@
-table, td {
-    border: 2px solid black;
-    background-color: white;
+body {
+    background-color: #F5F1ED;
+    color:#252323;
+}
+
+table {
+    border:1px solid #252323;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    width: 30%;
     text-align: center;
   }
 
+  tr {
+    background-color: white;
+  }
+
+  th {
+    background-color: #70798C;
+  }
+
+  .button {
+    background-color: #DAD2BC;
+    border: none;
+    padding: 10px 20px;
+    text-align:center;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: #A99985;
+  }
   .center {
     margin:auto;
-    width: 60%;
+    width: 50%;
     text-align:center;
     padding: 10px;
   }

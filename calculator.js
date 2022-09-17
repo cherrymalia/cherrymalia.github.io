@@ -3,47 +3,57 @@ function Calculate() {
     var oTable = document.getElementById("displayOutput");
     let result = 0, total = 0;
     const answers = [];
-    
+    if (!(iTable.rows.length == 1)) {
+        for (let i = iTable.rows.length - 1; i > 0; i--) {
+            iTable.deleteRow(i);
+        }
+    }
+
+    if (!(oTable.rows.length == 1)) {
+        oTable.deleteRow(1);
+    }
+
     do {
         var iRow = iTable.insertRow();
         var iCell1 = iRow.insertCell(0);
         var iCell2 = iRow.insertCell(1);
         var iCell3 = iRow.insertCell(2);
         var iCell4 = iRow.insertCell(3);
-        let variableA = prompt("Enter a number for Variable X");
+        let variableA = prompt("Enter a value for x");
         iCell1.innerHTML = variableA;
         let operator = prompt("Enter an operator");
         iCell2.innerHTML = operator;
-        let variableB = prompt("Enter a number for Variable Y");
+        let variableB = prompt("Enter a value for y");
         iCell3.innerHTML = variableB;
         if (isNaN(variableA)||isNaN(variableB)) {
-            iCell4.innerHTML = "wrong input";
+            iCell4.innerHTML = "wrong input number";
         } else {
             switch (operator) {
                 case "+":
-                    result = Number(variableA) + Number(variableB);
+                    result = (Number(variableA) + Number(variableB));
                     answers.push(result);
                     total += result;
                     break;
                 case "-":
-                    result = Number(variableA) - Number(variableB);
+                    result = (Number(variableA) - Number(variableB));
                     total += result;
                     answers.push(result);
                     break;
                 case "*":
-                    result = Number(variableA) * Number(variableB);
+                    result = (Number(variableA) * Number(variableB));
                     total += result;
                     answers.push(result);
                     break;
                 case "/":
-                    result = Number(variableA) / Number(variableB);
+                    result = (Number(variableA) / Number(variableB));
                     total += result;
                     answers.push(result);
                     break;
                 case "%":
-                    result = Number(variableA) % Number(variableB);
+                    result = (Number(variableA) % Number(variableB));
                     total += result;
                     answers.push(result);
+                    break;
                 default:
                     result = "computation error";
             }
@@ -61,6 +71,6 @@ function Calculate() {
 
     oCell1.innerHTML = Math.min(...answers);
     oCell2.innerHTML = Math.max(...answers);
-    oCell3.innerHTML = Math.round(total / answers.length);
+    oCell3.innerHTML = (total / answers.length).toFixed(2);
     oCell4.innerHTML = total;
 }

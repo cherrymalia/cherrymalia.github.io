@@ -7,35 +7,33 @@
     <meta name="author" content="Malia Cherry">
 </head>
 
-<body style="background: #375950">
+<body>
     <!--display output from calculator.js and min/max table after done-->
     <div class="center">
-        <h1 style="color:white">Calculator</h1>
-        <button type="button" onclick="Calculate()">Start Calculating</button>
-        <p style="color:white">View your results below</p>
+        <h1>Calculator</h1>
+        <button class="button" type="button" onclick="Calculate()">Start Calculating</button>
+        <p>View your results below</p>
     </div>
-        
+
         <table id="displayInput">
             <tr>
-              <td>x</td>
-              <td>operator</td>
-              <td>y</td>
-              <td>result</td>
+                <th>x</th>
+                <th>operator</th>
+                <th>y</th>
+                <th>result</th>
             </tr>
-          </table>
-          <br>
-
-          <table id="displayOutput">
+        </table>
+        <table id="displayOutput">
             <tr>
-              <td>min</td>
-              <td>max</td>
-              <td>average</td>
-              <td>total</td>
+                <th>min</th>
+                <th>max</th>
+                <th>average</th>
+                <th>total</th>
             </tr>
-          </table>
-        <br>
-        
-        <script src="calculator.js"></script>
-        
+        </table>
+
+    <script src="calculator.js"></script>
+
 </body>
+
 </html>
