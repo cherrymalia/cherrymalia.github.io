@@ -68,9 +68,14 @@ function Calculate() {
     var oCell2 = oRow.insertCell(1);
     var oCell3 = oRow.insertCell(2);
     var oCell4 = oRow.insertCell(3);
-
+    
+    let average = total / answers.length;
     oCell1.innerHTML = Math.min(...answers);
     oCell2.innerHTML = Math.max(...answers);
-    oCell3.innerHTML = (total / answers.length).toFixed(2);
+    if (average - Math.floor(average) == 0) {
+        oCell3.innerHTML = average;
+    } else {
+        oCell3.innerHTML = average.toFixed(2);
+    }
     oCell4.innerHTML = total;
 }
