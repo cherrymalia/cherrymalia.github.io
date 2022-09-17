@@ -3,6 +3,8 @@ function Calculate() {
     var oTable = document.getElementById("displayOutput");
     let result = 0, total = 0;
     const answers = [];
+    
+    //clear past results from input and output tables
     if (!(iTable.rows.length == 1)) {
         for (let i = iTable.rows.length - 1; i > 0; i--) {
             iTable.deleteRow(i);
