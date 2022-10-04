@@ -2,44 +2,35 @@
 <html>
     <head>
         <title>Form</title>
-        <style>
-            .labels {
-                display: inline-block;
-                width: 150px;
-                text-align: right;
-            }
-
-            #buttons {
-                margin-left: 150px;
-            }
-        </style>
+        <link href="formDetails.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <script src="validation.js"></script>
 
         <form name="infoForm" method="post">
+            <br>
             <label for="username" class="labels">Username: </label>
             <input type="text" name="username" id="name" placeholder="username">
             <br>
             <br>
 
             <label for="email" class="labels">Email: </label>
-            <input type="text" name="email" placeholder="example@email.com">
+            <input type="text" name="email" id="email" placeholder="example@email.com">
             <br>
             <br>
 
             <label for="phone" class="labels">Phone Number: </label>
-            <input type="text" name="phone" placeholder="(###)-###-####">
+            <input type="text" name="phone" id="phone" placeholder="(###)-###-####">
             <br>
             <br>
             
             <label for="password" class="labels">Password: </label>
-            <input type="password" name="password" placeholder="password">
+            <input type="password" name="password" id="pass" placeholder="password">
             <br>
             <br>
 
             <label for="confirm_password" class="labels">Confirm Password: </label>
-            <input type="password" name="confirm_password" placeholder="password">
+            <input type="password" name="confirm_password" id="conf_pass" placeholder="password">
             <br>
             <br>
 

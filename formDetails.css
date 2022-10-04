@@ -1,0 +1,17 @@
+.empty {
+    color: red;
+}
+
+.wrong {
+    color: orange;
+}
+
+.labels {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+#buttons {
+    margin-left: 150px;
+}
