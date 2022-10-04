@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            .labels {
+                display: inline-block;
+                width: 150px;
+                text-align: right;
+            }
+
+            #buttons {
+                margin-left: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="validation.js"></script>
+
+        <form name="infoForm" method="post">
+            <label for="username" class="labels">Username: </label>
+            <input type="text" name="username" id="name" placeholder="username">
+            <br>
+            <br>
+
+            <label for="email" class="labels">Email: </label>
+            <input type="text" name="email" placeholder="example@email.com">
+            <br>
+            <br>
+
+            <label for="phone" class="labels">Phone Number: </label>
+            <input type="text" name="phone" placeholder="(###)-###-####">
+            <br>
+            <br>
+            
+            <label for="password" class="labels">Password: </label>
+            <input type="password" name="password" placeholder="password">
+            <br>
+            <br>
+
+            <label for="confirm_password" class="labels">Confirm Password: </label>
+            <input type="password" name="confirm_password" placeholder="password">
+            <br>
+            <br>
+
+            <label for="gender" class="labels">Gender: </label>
+                <input type="radio" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="other">
+                <label for="other">Other</label>
+            <br>
+            <br>
+
+            <label for="age" class="labels">Age Group: </label>
+            <select name="age">
+                <option value="" disabled=disabled selected></option>
+                <option value="-20">&lt;21</option>
+                <option value="21-25">21-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-50">36-50</option>
+                <option value="50+">&gt;50</option>
+            </select>
+            <br>
+            <br>
+
+            <label for="genre" class="labels">Favorite Music Genre: </label>
+            <input type="checkbox" name="genre" value="pop">
+            <label for="pop">Pop</label>
+            <input type="checkbox" name="genre" value="hiphop">
+            <label for="hiphop">HipHop</label>
+            <input type="checkbox" name="genre" value="jazz">
+            <label for="jazz">Jazz</label>
+            <input type="checkbox" name="genre" value="rock">
+            <label for="rock">Rock</label>
+            <input type="checkbox" name="genre" value="classical">
+            <label for="classical">Classical Music</label>
+            <input type="checkbox" name="genre" value="country">
+            <label for="country">Country</label>
+            <br>
+            <br>
+
+            <div id="buttons">
+                <input type="button" onclick="validateForm()" value="Submit">
+                <input type="reset" value="Clear" onclick="clearForm()">
+            </div>
+            <p id="output">
+                here is where the output will go
+            </p>
+        </form>
+    </body>
+</html>
