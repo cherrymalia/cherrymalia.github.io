@@ -14,6 +14,7 @@ function validateForm() {
   //for username validations
   if (user == "") {
     out.innerText += "Please enter username\n";
+    //out.innerText += "Please enter username\n";
   } else if(user.length < 4 || user.length > 12) {
     out.innerText += "Please enter a valid username\n";
   } else {
@@ -62,11 +63,15 @@ function validateForm() {
   if (conf_pass == "") {
     out.innerText += "Please confirm password\n";
   } else {
-    if (conf_pass == pass && /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/.test(conf_pass)) {
-      count++;
+    if (/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/.test(conf_pass)) {
+      if (conf_pass == pass) {
+        count++;
+      } else {
+        out.innerText += "Please confirm password\n";
+        alert("Passwords do not match");
+      }
     } else {
       out.innerText += "Please confirm password\n";
-      alert("Passwords do not match");
     }
   }
   
