@@ -8,14 +8,13 @@ function validateForm() {
   let conf_pass = document.infoForm.conf_pass.value;
   let gender = document.infoForm.gender.value;
   let age = document.infoForm.age.value;
-  let out = document.getElementById("output");
+  const out = document.querySelector("#output");
   out.innerText = "";
 
   //for username validations
   if (user == "") {
     out.innerText += "Please enter username\n";
-    //out.innerText += "Please enter username\n";
-  } else if(user.length < 4 || user.length > 12) {
+  } else if (user.length < 4 || user.length > 12) {
     out.innerText += "Please enter a valid username\n";
   } else {
     count++;
