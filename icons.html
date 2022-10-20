@@ -6,13 +6,13 @@
 </head>
 <body>		
 	<span>
-		<img src="twitter.jpg" class="twitter" width="100" height="100">
-		<img src="funimation.jpg" class="funimation" width="100" height="100">
-		<img src="crunchyroll.png" class="crunchyroll" width="100" height="100">
+		<img src="img/twitter.jpg" class="twitter" width="100" height="100">
+		<img src="img/funimation.jpg" class="funimation" width="100" height="100">
+		<img src="img/crunchyroll.png" class="crunchyroll" width="100" height="100">
 		<br>
-		<img src="youtube.png" class="youtube" width="100" height="100">
-		<img src="tiktok.jpg" class="tiktok" width="100" height="100">
-		<img src="netflix.jpg" class="netflix" width="100" height="100">
+		<img src="img/youtube.png" class="youtube" width="100" height="100">
+		<img src="img/tiktok.png" class="tiktok" width="100" height="100">
+		<img src="img/netflix.jpg" class="netflix" width="100" height="100">
 	</span>
 	
 	<script>
@@ -25,7 +25,7 @@
 		$(this).fadeTo("fast", 0.5);
 		});
 		$("img.funimation").mouseenter(function(){
-    	$("p.in").text("In: Twitch");
+    	$("p.in").text("In: Funimation");
 		$(this).fadeTo("fast", 0.5);
 		});
 		$("img.crunchyroll").mouseenter(function(){
@@ -50,7 +50,7 @@
 		$(this).fadeTo( "fast", 1.0);
 		});
 		$("img.funimation").mouseleave(function(){
-    	$("p.out").text("Out: Twitch");
+    	$("p.out").text("Out: Funimation");
 		$(this).fadeTo( "fast", 1.0);
 		});
 		$("img.crunchyroll").mouseleave(function(){
@@ -73,7 +73,7 @@
   		$("img.twitter").dblclick(function() {
   		window.open("https://twitter.com/");
 		});
-		$("img.twitch").dblclick(function() {
+		$("img.funimation").dblclick(function() {
   		window.open("https://funimation.com/");
 		});
 		$("img.crunchyroll").dblclick(function() {
@@ -90,22 +90,22 @@
 		});
 		
 		$("img.twitter").click(function(){
-		$("img.clicked").attr("src", "twitter.jpg").width("300").height("300");
+		$("img.clicked").attr("src", "img/twitter.jpg").width("300").height("300");
 		});	
 		$("img.funimation").click(function(){
-		$("img.clicked").attr("src", "funimation.jpg").width("300").height("300");
+		$("img.clicked").attr("src", "img/funimation.jpg").width("300").height("300");
 		});
 		$("img.crunchyroll").click(function(){
-		$("img.clicked").attr("src", "crunchyroll.png").width("300").height("300");
+		$("img.clicked").attr("src", "img/crunchyroll.png").width("300").height("300");
 		});
 		$("img.youtube").click(function(){
-		$("img.clicked").attr("src", "youtube.png").width("300").height("300");
+		$("img.clicked").attr("src", "img/youtube.png").width("300").height("300");
 		});
 		$("img.tiktok").click(function(){
-		$("img.clicked").attr("src", "tiktok.jpg").width("300").height("300");
+		$("img.clicked").attr("src", "img/tiktok.png").width("300").height("300");
 		});
 		$("img.netflix").click(function(){
-		$("img.clicked").attr("src", "netflix.jpg").width("300").height("300");
+		$("img.clicked").attr("src", "img/netflix.jpg").width("300").height("300");
 		});
 		
 	</script>
